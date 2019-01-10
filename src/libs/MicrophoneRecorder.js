@@ -13,7 +13,7 @@ let onStopCallback;
 let onSaveCallback;
 let onDataCallback;
 
-const constraints = { audio: true, video: false }; // constraints - only audio needed
+const constraints = { audio: { sampleRate: 16000 }, video: false }; // constraints - only audio needed
 
 navigator.getUserMedia = (navigator.getUserMedia ||
                           navigator.webkitGetUserMedia ||
